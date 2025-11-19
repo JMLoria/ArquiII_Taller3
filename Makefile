@@ -8,14 +8,14 @@ PY := python3
 NVCCFLAGS := -O3 -std=c++14
 RUN_ARGS ?= 1048576 50 1
 
-.PHONY: all build-cuda bench plot clean
+.PHONY: all build bench plot clean
 
-.DEFAULT_GOAL := build-cuda
+.DEFAULT_GOAL := build
 
-all: build-cuda bench plot
-	@echo "[Makefile] Tarea 'all' completada: build-cuda, bench y plot"
+all: build bench plot
+	@echo "[Makefile] Tarea 'all' completada: build, bench y plot"
 
-build-cuda:
+build:
 	@echo "[Makefile] Compilando CUDA en $(SRCDIR)"
 	@cd $(SRCDIR) && \
 	if [ -f case_converter_cuda.cu ]; then \
