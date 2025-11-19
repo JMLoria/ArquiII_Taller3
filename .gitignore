@@ -1,3 +1,3 @@
 *.csv
 performance_plots/
-/src/case_converter 
+/src/case_converter_cuda

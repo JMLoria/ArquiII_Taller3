@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Nombre del ejecutable de tu programa CUDA
-EXECUTABLE="./case_converter"
+EXECUTABLE="./case_converter_cuda"
 # Nombre del archivo de salida para los resultados
 OUTPUT_FILE="performance_results.csv"
 
